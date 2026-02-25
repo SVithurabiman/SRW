@@ -34,7 +34,6 @@ We provide a bash script that handles environment creation, checkpoint download,
 
 ```bash
 git clone https://github.com/SVithurabiman/SRW.git
-cd SRW
 ```
 
 2. **Run the setup script:**
