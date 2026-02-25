@@ -1,7 +1,7 @@
 seed: 18
 dataset_path: ./SRW/sample_imgs
 limit: 500
-output_path: /home/s224286626/UNAUTHEMB_EXTR/SRW/results/imgs
+output_path: ./SRW/results/imgs
 
 path: ./SRW/results/ModelB
   
