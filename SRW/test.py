@@ -78,7 +78,7 @@ def main():
             bit_accs_org_adv_pgd = []
             adv_imgs = []
             print(f"Attacking with epsilon: {eps}, alpha:{alph} and num_iter: {num_iter}")
-            for i in range(len(encoded_img[:50])):
+            for i in range(len(encoded_img)):
                 adv_img = pgd_self_overwrite_attack(
                                                     encoded_img[i], 
                                                     setup.adv_messages[i], 
