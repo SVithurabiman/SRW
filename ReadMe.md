@@ -33,7 +33,7 @@ We provide a bash script that handles environment creation, checkpoint download,
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/SVithurabiman/SRW.git
+git clone --recurse-submodules https://github.com/SVithurabiman/SRW.git
 ```
 
 2. **Run the setup script:**
