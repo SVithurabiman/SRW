@@ -62,8 +62,9 @@ If you prefer to run manually:
 
 **Training**
 ```
-cd ..
-python -m SRW.train --config configs/default.yaml
+    
+python -m SRW.train --dataset_config ./SRW/configs/dataset.yaml --exp_config ./SRW/configs/train.yaml
+
 ```
 **Visualizing Training**
 
@@ -83,8 +84,7 @@ http://localhost:6006
 **Evaluation / Testing**
 
 ```
-cd ..
-python -m SRW.test --config configs/test.yaml
+python -m SRW.test --dataset_config ./SRW/configs/dataset.yaml --exp_config ./SRW/configs/test.yaml
 ```
 
 ## **Configuration**
