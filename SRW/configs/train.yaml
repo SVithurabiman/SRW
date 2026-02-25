@@ -1,0 +1,44 @@
+train_data_dir: /home/s224286626/fastfolder/coco2017/train 
+val_data_dir: /home/s224286626/fastfolder/coco2017/val
+batch_size: 32
+experiment_name: Trial4
+results_dir: /home/s224286626/UNAUTHEMB_EXTR/SRW/results
+epochs: 100
+
+loss:
+  fidelity_loss:
+    mse: 1.0
+    lpips: 0.5
+    lpips_net: vgg
+  weights:
+    encoder: 27.0
+    decoder: 6.75
+    adv: 3.5
+    re_emb: 3.5
+    
+noise_layers:
+  ber_threshold: 0.15
+pgd:
+  warmup_step: 100
+  max_epsilon: 0.06
+  max_alpha: 0.01 
+  min_alpha: 1e-4
+  num_iter: 20
+
+val:
+  pgd:
+    epsilon: 0.05
+    alpha: 0.009
+    num_iter: 30
+encoder:
+  lr: 0.0001
+  message_channels: 1
+  s_f: 0.9
+
+decoder:
+  lr: 0.0001
+
+common:
+  num_its: 5
+  padding_mode: zeros
+  img_channels: 3

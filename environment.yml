@@ -1,0 +1,39 @@
+name: SRW
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - jupyter
+  - notebook
+  - ipykernel
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - torchaudio=2.0.0
+  - pytorch-cuda=11.8
+  - pip
+  - pip:
+      - absl-py==2.3.1
+      - cryptography==46.0.5
+      - google-auth==2.48.0
+      - google-auth-oauthlib==1.0.0
+      - grpcio==1.70.0
+      - hpack==4.0.0
+      - kornia==0.7.3
+      - kornia_rs==0.1.10
+      - lpips==0.1.4
+      - Markdown==3.7
+      - oauthlib==3.3.1
+      - protobuf==5.29.6
+      - pyasn1==0.6.2
+      - pyasn1_modules==0.4.2
+      - requests-oauthlib==2.0.0
+      - rsa==4.9.1
+      - scipy==1.10.1
+      - tensorboard==2.14.0
+      - tensorboard-data-server==0.7.2
+      - tqdm==4.67.3
+      - typing_extensions==4.13.2
+      - Werkzeug==3.0.6
