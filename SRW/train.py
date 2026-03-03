@@ -8,7 +8,6 @@ from SRW.attacks.pgd import pgd_self_overwrite_attack
 from SRW.utils.config import load_config
 
 
-
 def main():
     args = parse_args()
     cfg = load_config(
@@ -67,12 +66,9 @@ def main():
                 num_iter=cfg.pgd.num_iter,
             )
 
-            overwritten_image_pert = overwritten_image
-            overrtiten_image_re_emb_pert = overrtiten_image_re_emb
-
             recovered_message = setup.decoder(watermarked_image_pert)
-            recovered_message_re_emb = setup.decoder(overrtiten_image_re_emb_pert)
-            recovered_message_ow = setup.decoder(overwritten_image_pert)
+            recovered_message_re_emb = setup.decoder(overrtiten_image_re_emb)
+            recovered_message_ow = setup.decoder(overwritten_image)
             try:
                 losses = loss_wrapper(
                     original_img=img,
@@ -196,8 +192,6 @@ def main():
                         "original": img,
                         "watermarked": watermarked_image,
                         "overwritten": overwritten_image,
-                        "watermarked_perturbed": watermarked_image_pert,
-                        "overwritten_perturbed": overwritten_image_pert,
                         "overwritten_re_emb": overrtiten_image_re_emb,
                     },
                     global_step,
