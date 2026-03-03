@@ -7,7 +7,7 @@ from SRW.models.architectures import (
     DeeperSpectralUNetEncoderwithFA_ResNet50,
     MessageDecoder,
 )
-from SRW.pertubation import noise_model
+from SRW.perturbation import noise_model
 from SRW.data.dataset import ImageDataset
 from SRW.utils.losses import WatermarkLossWrapper
 from SRW.utils.helpers import EvalHelper
