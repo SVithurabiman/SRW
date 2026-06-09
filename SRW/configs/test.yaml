@@ -3,7 +3,7 @@ dataset_path: ./SRW/sample_imgs
 limit: 500
 output_path: ./SRW/results/imgs
 
-path: ./SRW/results/ModelB
+path: ./SRW/results/ModelA
   
 pgd:
   attack: false
